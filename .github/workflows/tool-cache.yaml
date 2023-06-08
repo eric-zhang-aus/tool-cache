@@ -24,6 +24,8 @@ jobs:
         uses: terraform-linters/setup-tflint@v3
         with:
           tflint_version: v0.46.1
+      - name: Setup tfsec
+        uses: aquasecurity/tfsec-action@v1.0.0
       - name: Archive tool cache
         run: |
           cd "${{ runner.tool_cache }}"

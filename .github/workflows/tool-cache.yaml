@@ -24,8 +24,6 @@ jobs:
         uses: terraform-linters/setup-tflint@v3
         with:
           tflint_version: v0.46.1
-      - name: Setup tfsec 1.28.1
-        uses: Flydiverny/setup-tfsec@v1
       - name: Archive tool cache
         run: |
           cd "${{ runner.tool_cache }}"

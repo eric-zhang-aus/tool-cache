@@ -13,7 +13,7 @@ jobs:
         with:
           python-version: 3.9
       - name: pip install ruff
-        run: pip install ruff==0.0.267
+        run: pip install ruff==0.0.267 --target "${{ runner.tool_cache }}"
       - name: Archive tool cache
         run: |
           cd "${{ runner.tool_cache }}"

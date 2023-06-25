@@ -13,6 +13,7 @@ jobs:
         with:
           python-version: 3.9
           cache: "pip"
+      - name: pip install ruff
         run: pip install -r requirements.txt
       - name: Archive tool cache
         run: |
